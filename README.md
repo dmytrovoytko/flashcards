@@ -2,7 +2,7 @@
 
 Flask-based self-study flashcard app for the **Microsoft DP-600: Implementing Analytics Solutions Using Microsoft Fabric** certification.
 
-![screenshot](screenshot.png)
+![screenshot](screenshot1.png)
 
 Active recall workflow: pick mode + topic → see a term → try to recall → reveal definition → self-grade Yes/No → next card. Results persist to JSON for spaced review (`new` / `incorrect` modes). A `/stats` page shows accuracy overall, per topic and per difficulty.
 
@@ -49,6 +49,10 @@ Modes:
 
 Topics: dropdown of all 8 DP-600 domains from `topics.json` + `All Topics`.
 Legacy `medium`/`hard` values are accepted as aliases for `intermediate`/`advanced`.
+
+![screenshot](screenshot2.png)
+
+![screenshot](screenshot3.png)
 
 ## Project Structure
 
