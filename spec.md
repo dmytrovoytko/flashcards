@@ -69,7 +69,7 @@ For overall, each topic, each difficulty: `{total, answered, correct, incorrect,
 - Local JSON, no locking; fine for single user (<300 cards).
 - Client-side signed-cookie session; stale IDs skipped.
 - `SECRET_KEY` via env; debug off by default; Jinja autoescape; no auth.
-- Tests: `test_data_manager.py` (unittest, 7 tests) — run `python -m unittest test_data_manager -v`.
+- Tests: `tests/test_data_manager.py` (unittest, 7 tests) — run `python3 -m pytest tests/ -q`.
 
 ## 10. Changelog (this iteration)
 
