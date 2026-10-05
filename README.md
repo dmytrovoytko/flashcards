@@ -69,7 +69,8 @@ flashcards.json      # 202 merged cards (from flashcards1-8.json)
 flashcards1-8.json   # per-topic source files (kept for reference)
 results.json         # answer log: {id, correct, timestamp}
 requirements.txt     # Flask>=3.0
-test_data_manager.py # unittest suite (7 tests)
+tests/               # unittest suite (7 tests)
+  test_data_manager.py 
 ```
 
 Dataset: 202 cards (94 simple / 85 intermediate / 23 advanced) across topics 1-8.
@@ -89,7 +90,7 @@ Result entry:
 ## Tests
 
 ```bash
-python -m unittest test_data_manager -v
+python3 -m pytest tests/ -q
 ```
 
 Covers: any/difficulty/topic filtering, legacy aliases, new/incorrect lifecycle, stats, compaction.
