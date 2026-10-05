@@ -1,0 +1,1416 @@
+[
+  {
+    "id": 101,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "Microsoft Fabric",
+    "definition": "Microsoft Fabric is an all-in-one, cloud-based analytics and data management platform delivered as a software-as-a-service (SaaS). It brings together tools for data engineering, data warehousing, real-time analytics, and business intelligence into a single unified environment."
+  },
+  {
+    "id": 102,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "Data Factory (Fabric)",
+    "definition": "Fabric service for ingesting, preparing, and transforming data using dataflows (Power Query/M, UI-assisted) and pipelines (orchestration), from sources including lakehouse, warehouse, and eventhouse."
+  },
+  {
+    "id": 103,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "Analytics / Data Engineering (Fabric)",
+    "definition": "Fabric service for collecting, storing, analyzing, and processing large volumes of data with lakehouses, notebooks (PySpark/Python), Spark job definitions, ML models and experiments, data agents, and environments."
+  },
+  {
+    "id": 104,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "Databases (Fabric SQL database)",
+    "definition": "Built-in transactional SQL database in Fabric based on Azure SQL Database. Easy setup, automated backup with storage in OneLake, supports application-based storage like a native SQL database."
+  },
+  {
+    "id": 105,
+    "topic_id": 1,
+    "difficulty": "intermediate",
+    "term": "Fabric IQ",
+    "definition": "Fabric service for defining reusable business standards, semantics, key definitions, and business relationships centrally, usable across the company including by data agents and other Fabric services."
+  },
+  {
+    "id": 106,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "Power BI (in Fabric)",
+    "definition": "Industry-standard reporting and analytics service in Fabric, with dataflows, org apps, scorecards/metric sets, dashboards, and paginated reports."
+  },
+  {
+    "id": 107,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "Real-Time Intelligence",
+    "definition": "Fabric service for data in motion with fast zero-ETL transformation and very low latency for telemetry, using eventhouses, eventstreams, real-time dashboards, activators, rules, and event-driven actions."
+  },
+  {
+    "id": 108,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "OneLake",
+    "definition": "The single open storage hub for all data in Microsoft Fabric. Common storage for почти all services, enabling sharing, securing, and managing data from one place."
+  },
+  {
+    "id": 109,
+    "topic_id": 1,
+    "difficulty": "advanced",
+    "term": "OneLake storage exceptions",
+    "definition": "Two things are NOT stored in OneLake: Import-mode semantic models (stored in Power BI in-memory engine) and Real-Time Intelligence eventhouse data (proprietary Kusto engine storage, with only a selective mirror/copy to OneLake)."
+  },
+  {
+    "id": 110,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "Workspaces",
+    "definition": "Consolidated containers/groupings for all Fabric items, grouped by business or technology area. Also act as a security context for data and insights access; every Fabric item lives in a workspace."
+  },
+  {
+    "id": 111,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "OneLake Catalog",
+    "definition": "Left-menu entry point giving a filtered overview of workspaces and items you have at least read access to, plus a Govern area with governance status, recommendations, and learning links."
+  },
+  {
+    "id": 112,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "Monitor",
+    "definition": "Left-menu hub showing overview and status of jobs, notebook executions, pipeline runs, and other activity across the Fabric tenant."
+  },
+  {
+    "id": 113,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "Real-Time Hub",
+    "definition": "Left-menu entry point for streaming / data in motion: connections, streams, event processing, Fabric capacity events. Lets you view pre-created RT items and create new Real-Time Intelligence items directly."
+  },
+  {
+    "id": 114,
+    "topic_id": 1,
+    "difficulty": "intermediate",
+    "term": "Workloads",
+    "definition": "Left-menu area for adding custom third-party workloads built on Fabric by external providers, some of which are paid services."
+  },
+  {
+    "id": 115,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "Apps and Metrics (overflow menu)",
+    "definition": "Overflow (three dots) options: Apps lists apps deployed to the app catalog; Metrics lets you work with scorecards and metric sets (goals), where the engine auto-creates a semantic model to track each goal over time."
+  },
+  {
+    "id": 116,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "End-to-end analytics flow",
+    "definition": "Four phases: Getting data (Data Engineering, Data Factory, Data Science, Power BI, Real-Time Intelligence), Storing data (Databases, Warehouse, Data Engineering, Power BI, Real-Time Intelligence on OneLake), Preparing data (same five), Visualizing data (Power BI, Real-Time Intelligence)."
+  },
+  {
+    "id": 117,
+    "topic_id": 1,
+    "difficulty": "intermediate",
+    "term": "Microsoft Purview",
+    "definition": "Unified data governance, compliance, and risk management platform complementing Fabric's built-in governance for enterprise-ready implementations. Open platform covering Microsoft and third-party data services."
+  },
+  {
+    "id": 118,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "Fabric Capacity",
+    "definition": "The pooled CPU, memory, and network compute driving all operations in Fabric. Created in the Azure portal (or auto-started as trial from the Fabric portal). Required alongside a workspace to use Fabric items."
+  },
+  {
+    "id": 119,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "SKU (F2 to F2048)",
+    "definition": "Fabric capacity sizes measured in stock-keeping units (SKUs), from smallest F2 to largest F2048. F stands for Fabric; the number is the SKU count available to the capacity."
+  },
+  {
+    "id": 120,
+    "topic_id": 1,
+    "difficulty": "intermediate",
+    "term": "Capacity Units (CUs)",
+    "definition": "Unit measuring how much capacity each Fabric service/process consumes. Can be fractional, so an F2 capacity can run e.g. four parallel threads at 0.5 CU each."
+  },
+  {
+    "id": 121,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "Fabric Trial capacity",
+    "definition": "Free trial equivalent to F64 without all features (e.g. no Copilot), valid 60 days from activation, auto-created on first Fabric-item creation. Limited to five trial capacities per tenant; non-Fabric workspaces auto-upgrade on first Fabric item."
+  },
+  {
+    "id": 122,
+    "topic_id": 1,
+    "difficulty": "intermediate",
+    "term": "Power BI Pro license and F64 rule",
+    "definition": "Power BI Pro license is needed only to use Power BI as a service; Fabric can be used without it. With F64 capacity or larger, only developers need Pro; end users are covered by the capacity."
+  },
+  {
+    "id": 123,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "Fabric-enabled Workspace",
+    "definition": "A workspace assigned a Fabric or Trial capacity (Workspaces > New > name > Advanced > select capacity > Apply), required before creating Fabric-specific items. Also serves as the security context (see Chapter 7)."
+  },
+  {
+    "id": 124,
+    "topic_id": 1,
+    "difficulty": "intermediate",
+    "term": "License info (workspace setting)",
+    "definition": "Workspace setting to view/change capacity/license usage, plus the workspace connection link used by third-party apps, APIs, and Graph connections for programmatic changes."
+  },
+  {
+    "id": 125,
+    "topic_id": 1,
+    "difficulty": "intermediate",
+    "term": "Azure connections (workspace setting)",
+    "definition": "Workspace setting linking an Azure Data Lake Storage Gen2 account for dataflow storage and connecting a Log Analytics workspace for log shipping."
+  },
+  {
+    "id": 126,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "System storage (workspace setting)",
+    "definition": "Workspace setting showing total system storage usage, grouped by item name and size."
+  },
+  {
+    "id": 127,
+    "topic_id": 1,
+    "difficulty": "intermediate",
+    "term": "Git integration (workspace setting)",
+    "definition": "Workspace setting connecting to GitHub or Azure DevOps for version control. GitHub requires manual personal access token (PAT) maintenance; Azure DevOps uses Azure Entra ID single sign-on (SSO). Out of scope detail for DP-600 core but appears in Chapter 8."
+  },
+  {
+    "id": 128,
+    "topic_id": 1,
+    "difficulty": "simple",
+    "term": "OneLake file explorer and shortcut cache",
+    "definition": "Workspace OneLake setting to download the OneLake file explorer app (OneLake files inside local file explorer) and to enable caching for shortcuts so shortcut data is cached in the workspace OneLake for faster reads."
+  },
+  {
+    "id": 129,
+    "topic_id": 1,
+    "difficulty": "intermediate",
+    "term": "Workspace identity",
+    "definition": "Workspace setting creating a managed service principal (via + Workspace identity button) so applications outside Fabric can access items and processes inside the workspace."
+  },
+  {
+    "id": 130,
+    "topic_id": 1,
+    "difficulty": "advanced",
+    "term": "Network security / private endpoints",
+    "definition": "Workspace setting creating connections to Azure private endpoints so Fabric can read/write specific services inside a virtual private network (VPN)."
+  },
+  {
+    "id": 131,
+    "topic_id": 1,
+    "difficulty": "intermediate",
+    "term": "Workspace monitoring",
+    "definition": "Workspace setting enabling deep monitoring via a standard set of items that creates an eventhouse and eventstream tracking workspace events for further analysis."
+  },
+  {
+    "id": 132,
+    "topic_id": 1,
+    "difficulty": "intermediate",
+    "term": "Power BI workspace settings",
+    "definition": "Three areas: General (app/template access control, edit semantic model in web UI), Data connections (disconnect report from semantic model if user edits it, for security/governance), Embed codes (codes for embedding Power BI reports in external websites)."
+  },
+  {
+    "id": 133,
+    "topic_id": 1,
+    "difficulty": "advanced",
+    "term": "Delegated Settings (SAS)",
+    "definition": "Workspace setting allowing users/applications to access the workspace OneLake with a shared access signature (SAS) token."
+  },
+  {
+    "id": 134,
+    "topic_id": 1,
+    "difficulty": "advanced",
+    "term": "Spark Pool (starter pool)",
+    "definition": "Data Engineering/Science workspace setting for Spark pool sizes. Includes a fast-starting default starter pool plus manually configured pools. Not in DP-600 exam, included for completeness."
+  },
+  {
+    "id": 135,
+    "topic_id": 1,
+    "difficulty": "advanced",
+    "term": "Environment and Native Execution Engine (NEE)",
+    "definition": "Spark environment setting for Spark properties, libraries (including custom uploads), notebook/Spark-job-definition behavior. Key feature: Native Execution Engine (NEE) accelerates notebook execution."
+  },
+  {
+    "id": 136,
+    "topic_id": 1,
+    "difficulty": "advanced",
+    "term": "Spark Jobs setting",
+    "definition": "Setting reserving max cores per Spark job (reducing parallel jobs) and configuring Spark pool timeout to stop idle pools."
+  },
+  {
+    "id": 137,
+    "topic_id": 1,
+    "difficulty": "advanced",
+    "term": "High concurrency",
+    "definition": "Spark setting allowing multiple notebooks (including notebooks inside pipelines) to share the same Spark session to optimize parallel processing."
+  },
+  {
+    "id": 138,
+    "topic_id": 1,
+    "difficulty": "advanced",
+    "term": "Automatic log (ML)",
+    "definition": "Spark setting enabling automatic tracking of machine learning models and notebook experiments (metrics, parameters, models)."
+  },
+  {
+    "id": 139,
+    "topic_id": 1,
+    "difficulty": "advanced",
+    "term": "Data Factory Apache Airflow setting",
+    "definition": "Workspace Data Factory setting configuring runtime for Apache Airflow, a code-based orchestrator for process execution. Out of scope for DP-600."
+  },
+  {
+    "id": 140,
+    "topic_id": 1,
+    "difficulty": "intermediate",
+    "term": "DP-600 vs DP-700 split",
+    "definition": "DP-600 Fabric Analytics Engineer Associate focuses on analytics, governance, and insights (ingestion/transformation, semantic models, security). DP-700 Fabric Data Engineer Associate absorbed the infrastructure/architecture content initially in DP-600. Evolved from the 1992 MCP program."
+  },
+  {
+    "id": 201,
+    "topic_id": 2,
+    "difficulty": "simple",
+    "term": "OneLake Catalog areas (5)",
+    "definition": "1 Grouped items selector (endorsement/favorites/owner/all), 2 Workspaces list you can access, 3 Type filter (Data, Insights, Processes, Solutions, Configurations - one group at a time), 4 Free-text search bar (name, owner, workspace, endorsement, sensitivity, live filtering), 5 Explore/Govern (governance status, recommendations, learning links)."
+  },
+  {
+    "id": 202,
+    "topic_id": 2,
+    "difficulty": "intermediate",
+    "term": "OneLake Catalog preview features and GA rule",
+    "definition": "At book writing time, the Insights item grouping and the Govern tab are in preview. Preview connectors/features are not asked on the DP-600 exam; they enter the exam only after becoming generally available (GA)."
+  },
+  {
+    "id": 203,
+    "topic_id": 2,
+    "difficulty": "intermediate",
+    "term": "Real-Time Hub as ingestion control plane",
+    "definition": "One-stop shop for streaming data: connects CDC-enabled sources like Azure SQL DB/SQL Server via Event Hubs or Kafka, bridges ingestion from sources to real-time consumers (eventstreams, eventhouses), and ingests Fabric/Azure system events. You see only Real-Time artifacts you can access."
+  },
+  {
+    "id": 204,
+    "topic_id": 2,
+    "difficulty": "advanced",
+    "term": "Azure Event Grid backbone and system events",
+    "definition": "System-event ingestion under Real-Time Hub runs on Azure Event Grid, a managed event-routing service. System events are structured, schema-consistent messages (workspace ID, creator, timestamp): dataset refresh completion, capacity threshold warnings, workspace create/modify/delete, dataflow failure alerts, eventstream deployment status."
+  },
+  {
+    "id": 205,
+    "topic_id": 2,
+    "difficulty": "simple",
+    "term": "Fabric Events vs Azure Events",
+    "definition": "Two auto-populated categories in Real-Time Hub surfacing discoverable system events: Fabric Events (emitted by Fabric services) and Azure Events (emitted by Azure services). Users opt in, then route to eventstream for transform/aggregate or to activator rules (e.g. Teams alert, start pipeline)."
+  },
+  {
+    "id": 206,
+    "topic_id": 2,
+    "difficulty": "simple",
+    "term": "OneLake Catalog vs Real-Time Hub (Table 2-1)",
+    "definition": "Discoverability: Catalog = all accessible items with deep search; Hub = Real-Time Intelligence items in Fabric and Azure. Creation: Catalog users cannot create items; Hub users can create all Real-Time/activator item types. Governance: Catalog has central Govern tab; Hub has only per-item governance details."
+  },
+  {
+    "id": 207,
+    "topic_id": 2,
+    "difficulty": "simple",
+    "term": "Shortcuts (no-copy pointers)",
+    "definition": "Pointers to where data resides instead of copying it. You read the latest version on demand. Same creation pattern across items, always using the creator's access; flavors exist inside one workspace, across workspaces, across tenants, and to external sources."
+  },
+  {
+    "id": 208,
+    "topic_id": 2,
+    "difficulty": "intermediate",
+    "term": "Local shortcuts (sources and security)",
+    "definition": "Connect to KQL databases, lakehouses, mirrored Azure Databricks catalogs, mirrored databases, semantic models, SQL databases, warehouses, warehouse snapshots inside/outside the workspace. They inherit the current user's security context, so a developer and an end user each see only data they can access."
+  },
+  {
+    "id": 209,
+    "topic_id": 2,
+    "difficulty": "intermediate",
+    "term": "KQL database OneLake availability for shortcuts",
+    "definition": "Shortcut from a KQL database works only when its OneLake availability setting is enabled (Figure 2-2, shows Up to date / completed). Without it the KQL data cannot be shortcut."
+  },
+  {
+    "id": 210,
+    "topic_id": 2,
+    "difficulty": "intermediate",
+    "term": "External shortcuts and delegated authorization",
+    "definition": "Reads from outside Fabric: Azure Data Lake Storage Gen2, Databricks, Snowflake, Amazon, Google, AWS S3-compatible endpoints. Configured with fixed delegated credentials, NOT the caller's source security context, so every Fabric user sees the same data."
+  },
+  {
+    "id": 211,
+    "topic_id": 2,
+    "difficulty": "simple",
+    "term": "Dataflow Gen1 essentials",
+    "definition": "Long-standing Power BI UI-assisted ingestion using the Power Query (M) language in the browser. Engine similar to Power BI Desktop; destination storage lives inside the dataflow (backing storage account, optionally customer-managed Azure storage)."
+  },
+  {
+    "id": 212,
+    "topic_id": 2,
+    "difficulty": "intermediate",
+    "term": "Dataflow Gen1 vs Gen2 exam row",
+    "definition": "Both author with Power Query and support incremental refresh and the Dataflows connector. Key exam difference: only Gen1 supports DirectQuery via the Dataflows connector (use Gen1 when shortcuts can't cover a direct-query need). Gen2 adds shorter authoring, autosave/background publish, custom destinations, better monitoring/history, pipeline integration, high-scale compute."
+  },
+  {
+    "id": 213,
+    "topic_id": 2,
+    "difficulty": "simple",
+    "term": "Dataflow Gen2 new capabilities",
+    "definition": "Rebuilt backend with custom destinations (default + per-table), autosave draft, improved monitoring/refresh history, integration with data pipelines, high-scale compute, OneLake catalog as a source, and optional Git/CI-CD enablement at creation."
+  },
+  {
+    "id": 214,
+    "topic_id": 2,
+    "difficulty": "simple",
+    "term": "Dataflow Gen1 Define new tables UI",
+    "definition": "View more shows the full growing source list; Upload file ingests a single file; X (hard to find) closes without saving. Each source then has its own connection settings, out of scope for network details."
+  },
+  {
+    "id": 215,
+    "topic_id": 2,
+    "difficulty": "simple",
+    "term": "Power Query UI panes and M formula bar",
+    "definition": "Menu bar (Power Query, Transform, Add column, View, Help), queries list (one dataflow holds many queries the consumer connects to), data preview (first 99 rows, scrollable, right-click column for full context menu like Split column), Query settings Applied Steps (click any step to preview/debug). The formula bar above the preview accepts hand-written M; M details are out of scope, see Microsoft Learn reference."
+  },
+  {
+    "id": 216,
+    "topic_id": 2,
+    "difficulty": "intermediate",
+    "term": "Link tables from other dataflows",
+    "definition": "Reuse tables from existing dataflows as a source to add reference data, clean, or aggregate. The dialog shows you are signed in: as developer you must already have access to the source dataflow to read it."
+  },
+  {
+    "id": 217,
+    "topic_id": 2,
+    "difficulty": "intermediate",
+    "term": "Import Model JSON and CDM folder preview",
+    "definition": "Import Model loads a predefined Gen1 model from exported JSON (export via item ... menu) as a starting point. Attach a Common Data Model folder is long-running preview and, like other previews, not asked while in preview; Gen2 makes its future uncertain."
+  },
+  {
+    "id": 218,
+    "topic_id": 2,
+    "difficulty": "intermediate",
+    "term": "Dataflow Gen2 creation dialog",
+    "definition": "Prompts for a name plus a checkbox to disable Git integration, deployment pipelines, and Public API scenarios (full CI/CD handling). CI/CD mechanics are out of DP-600 scope (see Microsoft blog)."
+  },
+  {
+    "id": 219,
+    "topic_id": 2,
+    "difficulty": "simple",
+    "term": "Dataflow Gen2 first screen and OneLake source",
+    "definition": "Offers default destination, Excel, SQL Server, Text/CSV, other dataflows, plus Get data from another source opening the full Choose-data-source list including the OneLake catalog. View more reveals all sources; blue Preview-marked connectors are out of exam scope."
+  },
+  {
+    "id": 220,
+    "topic_id": 2,
+    "difficulty": "intermediate",
+    "term": "Default vs per-table destination in Gen2",
+    "definition": "Add default destination saves all flow outputs to one place (Figure 2-17: Lakehouse, Warehouse, SQL database preview, Azure SQL, Azure Data Explorer/Kusto). Per-table Data destination (Figure 2-18) adds SharePoint (preview) as an extra option. For a KQL database destination, copy the KQL DB URL and use the Azure Data Explorer connector; it is not listed as OneLake."
+  },
+  {
+    "id": 221,
+    "topic_id": 2,
+    "difficulty": "simple",
+    "term": "Power BI Desktop vs web experience",
+    "definition": "Windows users can use full-featured Power BI Desktop or the browser experience; Mac users must use the browser. Desktop via Microsoft Store auto-updates; via download link you maintain upgrades manually. Desktop connectors are a superset (direct local-server access) of Gen1/Gen2 web lists."
+  },
+  {
+    "id": 222,
+    "topic_id": 2,
+    "difficulty": "intermediate",
+    "term": "SQL Server connection modes in Power BI",
+    "definition": "Enter server (e.g. <someserver>.database.windows.net) and optional database, then choose Import (reads all into VertiPaq memory: slow ingest, fast queries, DAX-ready) or DirectQuery (live per-interaction queries: fresh but slower, source-dependent, limited modeling like no calculated tables). Direct Lake is not offered for this connection type."
+  },
+  {
+    "id": 223,
+    "topic_id": 2,
+    "difficulty": "intermediate",
+    "term": "Direct Lake how it works",
+    "definition": "For OneLake Delta data, compute loads needed columns on demand into VertiPaq cache without a separate engine and without full import. It watches the Delta Lake transaction log; on new commits it invalidates cached chunks and pulls fresh Parquet, giving near-real-time analytics on lakehouse/warehouse tables with instant hits when already cached."
+  },
+  {
+    "id": 224,
+    "topic_id": 2,
+    "difficulty": "simple",
+    "term": "OneLake catalog connection item types and Navigator",
+    "definition": "From Power BI Desktop OneLake catalog you see only items you can access: KQL Databases, Lakehouses, Semantic models, Metric sets, SQL analytics endpoints, SQL databases, Warehouses. KQL/SQL-like sources open a Navigator to pick a table (e.g. StockData), then Load directly or Transform Data via Power Query."
+  },
+  {
+    "id": 225,
+    "topic_id": 2,
+    "difficulty": "simple",
+    "term": "Semantic model live connection in Desktop",
+    "definition": "Connecting to a semantic model from the OneLake catalog lands in Power BI Desktop with the full tables and measures pane on the right (Figure 2-25), ready for visuals without re-ingesting data."
+  },
+  {
+    "id": 226,
+    "topic_id": 2,
+    "difficulty": "simple",
+    "term": "New web report from semantic model",
+    "definition": "Workspace New report offers Excel/CSV, manual paste/type, or a published semantic model filtered by workspace, All/My data/Endorsed in org, plus free-text search. Auto-create report (default, template-generated, pre-select-data splash lasts seconds) vs Create blank report; reports open live (Edit to modify), support drag-drop, on-object properties editing, and desktop plus mobile layouts."
+  },
+  {
+    "id": 227,
+    "topic_id": 2,
+    "difficulty": "intermediate",
+    "term": "KQL to Power BI Desktop via ADX connector",
+    "definition": "Get Data > Azure Data Explorer (Kusto): enter cluster URL, database, optional pasted KQL query (Figure 2-33), then must pick DirectQuery (not Import) so the Kusto engine executes with query folding over very large datasets instead of Power BI."
+  },
+  {
+    "id": 228,
+    "topic_id": 2,
+    "difficulty": "intermediate",
+    "term": "KQL to Power BI web via queryset",
+    "definition": "Start from the KQL database attached KQL queryset (notebook for KQL scripts). Select a query to enable Create Power BI report (disabled with no selection), then design on the Kusto Query Result with web visuals, save, and share."
+  },
+  {
+    "id": 229,
+    "topic_id": 2,
+    "difficulty": "simple",
+    "term": "Lakehouse decision row",
+    "definition": "Supports unstructured, semi-structured, and structured data; persona data engineer/data scientist with Spark (Scala, PySpark, Spark SQL, R); organized folders/files/databases/tables; reads Spark and T-SQL, writes Spark notebooks/job definitions; single-table ACID only (no multi-table transactions); exposes OneLake plus SQL analytics endpoint."
+  },
+  {
+    "id": 230,
+    "topic_id": 2,
+    "difficulty": "simple",
+    "term": "Warehouse decision row",
+    "definition": "Supports structured and semi-structured JSON; persona warehouse developer/architect/engineer/database developer with SQL; organized databases/schemas/tables; reads T-SQL and Spark, writes T-SQL with functions and stored procedures; full multi-table ACID transactions like SQL Server."
+  },
+  {
+    "id": 231,
+    "topic_id": 2,
+    "difficulty": "simple",
+    "term": "Eventhouse and Kusto engine",
+    "definition": "Separate Kusto engine (shared with Log Analytics, Sentinel, KQL databases) for unstructured/semi/structured time-series telemetry such as IoT and logs. Skills no-code/KQL/SQL; reads KQL, T-SQL, Spark; writes KQL, Spark, connectors; supports multi-table ingestion; see Microsoft Fabric decision guide to choose a data store."
+  },
+  {
+    "id": 232,
+    "topic_id": 2,
+    "difficulty": "intermediate",
+    "term": "Eventhouse OneLake mirror",
+    "definition": "Lakehouse and warehouse share Delta Parquet in OneLake natively. Eventhouse stores in Kusto format and mirrors selectively to OneLake per KQL database or per table, not automatically for everything."
+  },
+  {
+    "id": 233,
+    "topic_id": 2,
+    "difficulty": "advanced",
+    "term": "Store security row (Table 2-3)",
+    "definition": "Lakehouse: row-level, column-level, and table-level security via T-SQL, none for Spark. Warehouse: object-level, row-level, column-level security plus DDL/DML and dynamic data masking. Eventhouse/KQL database: row-level security. All three are shortcut-accessible and queryable across items."
+  },
+  {
+    "id": 234,
+    "topic_id": 2,
+    "difficulty": "intermediate",
+    "term": "Multi-table transactions and latency rows",
+    "definition": "Transactions: warehouse Yes (full ACID), lakehouse No (one table at a time), eventhouse Yes for multi-table ingestion. Ingestion latency: lakehouse and warehouse instantly queryable; eventhouse queued/streaming with a couple seconds latency. All support unlimited volume and cross-item queries."
+  },
+  {
+    "id": 235,
+    "topic_id": 2,
+    "difficulty": "advanced",
+    "term": "DP-600 out-of-scope ingestion (pipelines, notebooks)",
+    "definition": "From the analyst-role perspective the exam covers shortcuts, Dataflows Gen1/Gen2, and Power BI connections (to and from). Pipelines and notebooks are additional ingestion options but explicitly out of scope for DP-600; Data Factory pipeline ingestion to a lakehouse is noted as out of scope."
+  },
+  {
+    "id": 301,
+    "topic_id": 3,
+    "difficulty": "simple",
+    "term": "Views in Fabric (Ch03)",
+    "definition": "Saved SELECT logic that reuses a cleaned or restricted version of a table without copying data (e.g. filter NULLs, hide sensitive columns). Create with CREATE VIEW; query it like a table. Best for large tables where copying millions of rows is wasteful."
+  },
+  {
+    "id": 302,
+    "topic_id": 3,
+    "difficulty": "intermediate",
+    "term": "Where views, functions, and procedures can be created",
+    "definition": "Create views, functions, and stored procedures in a Fabric warehouse with full T-SQL to centralize logic early (better than repeating it in Power BI for large volumes). In a lakehouse you can create views via the SQL analytics endpoint, but functions and stored procedures are not supported there."
+  },
+  {
+    "id": 303,
+    "topic_id": 3,
+    "difficulty": "simple",
+    "term": "Scalar functions (Ch03)",
+    "definition": "Reusable functions returning a single value, e.g. a discount amount or formatted date. Write once, reuse everywhere instead of repeating the calculation."
+  },
+  {
+    "id": 304,
+    "topic_id": 3,
+    "difficulty": "advanced",
+    "term": "Inline table-valued functions (Fabric limit)",
+    "definition": "Fabric supports only inline table-valued functions, which return a result set from a single RETURN SELECT statement. No BEGIN...END blocks, no declared variables, no classic IF logic; express branching with CASE or SELECT expressions."
+  },
+  {
+    "id": 305,
+    "topic_id": 3,
+    "difficulty": "intermediate",
+    "term": "Stored procedures (Ch03)",
+    "definition": "Reusable routines with parameters that automate multiple transformation steps as a repeatable process (e.g. load, clean, upsert). Called on demand or from orchestration, unlike views/functions used inline in queries."
+  },
+  {
+    "id": 306,
+    "topic_id": 3,
+    "difficulty": "simple",
+    "term": "Enriching data and its three doors",
+    "definition": "Adding columns or connecting related tables to answer business questions. Same enrichment can be done in Warehouse SQL, Lakehouse notebooks (PySpark), or Lakehouse Dataflow Gen2 (no-code Power Query); also possible later at Power BI modeling level."
+  },
+  {
+    "id": 307,
+    "topic_id": 3,
+    "difficulty": "simple",
+    "term": "Enriching in Warehouse with SQL (DDL)",
+    "definition": "Warehouse tables are relational and structured for fast queries. Enrich with DDL such as CREATE TABLE and ALTER TABLE to add columns/tables (e.g. add TotalAmount to a sales fact)."
+  },
+  {
+    "id": 308,
+    "topic_id": 3,
+    "difficulty": "intermediate",
+    "term": "Enriching in Lakehouse with notebooks",
+    "definition": "Use Spark notebooks with PySpark/Spark SQL attached to the lakehouse for flexible enrichment of structured, semi-structured, and unstructured data at engineering scale."
+  },
+  {
+    "id": 309,
+    "topic_id": 3,
+    "difficulty": "simple",
+    "term": "Enriching in Lakehouse with Dataflow Gen2",
+    "definition": "Visual no-code Power Query environment in the lakehouse for beginners or guided work, same experience as Power Query in Power BI. Choose it when the signal words are low-code, repeatable, or step-by-step with debugging."
+  },
+  {
+    "id": 310,
+    "topic_id": 3,
+    "difficulty": "simple",
+    "term": "Refining with joins (three doors)",
+    "definition": "Combine tables the same way in Warehouse SQL JOINs, Lakehouse notebook joins, or Dataflow Gen2 Merge queries. INNER keeps matches only; LEFT OUTER keeps all left rows with NULLs for missing right matches; FULL OUTER keeps all rows from both."
+  },
+  {
+    "id": 311,
+    "topic_id": 3,
+    "difficulty": "simple",
+    "term": "Aggregation in Warehouse SQL (GROUP BY)",
+    "definition": "GROUP BY defines the buckets while SUM, COUNT, and similar functions compute per bucket (e.g. GROUP BY ProductName with SUM(SalesAmount) for total sales per product)."
+  },
+  {
+    "id": 312,
+    "topic_id": 3,
+    "difficulty": "simple",
+    "term": "Filtering in Warehouse SQL (WHERE)",
+    "definition": "WHERE selects rows before any grouping (e.g. WHERE OrderDate >= DATEADD(...,-30,...) for last 30 days; WHERE YEAR(SaleDate)=YEAR(GETDATE()) for current year). Use HAVING after GROUP BY, not for row filtering."
+  },
+  {
+    "id": 313,
+    "topic_id": 3,
+    "difficulty": "simple",
+    "term": "Deduplication in Warehouse SQL",
+    "definition": "SELECT DISTINCT CustomerID removes fully duplicated values; GROUP BY or ROW_NUMBER variants remove duplicates per chosen columns (e.g. keep one row per OrderID such as duplicated OrderIDs 3 and 6)."
+  },
+  {
+    "id": 314,
+    "topic_id": 3,
+    "difficulty": "simple",
+    "term": "Finding NULLs in Warehouse SQL",
+    "definition": "Missing values appear as NULL. Detect with IS NULL / IS NOT NULL (e.g. SELECT * ... WHERE CustomerID IS NULL). Never use = NULL. Discuss recurring quality issues with data owners and stakeholders, not just code around them."
+  },
+  {
+    "id": 315,
+    "topic_id": 3,
+    "difficulty": "intermediate",
+    "term": "Deduplication in Lakehouse notebooks",
+    "definition": "PySpark dropDuplicates() removes duplicate rows, optionally per column subset (Figure 3-24 before/after). Code-first choice when already working at Spark scale."
+  },
+  {
+    "id": 316,
+    "topic_id": 3,
+    "difficulty": "intermediate",
+    "term": "Handling NULLs in Lakehouse notebooks",
+    "definition": "NULLs behave as in SQL (comparisons/aggregations skip or propagate). Common PySpark fixes: .na.drop() to remove rows with NULLs, .na.fill() to substitute defaults, plus filter expressions for targeted cleanup."
+  },
+  {
+    "id": 317,
+    "topic_id": 3,
+    "difficulty": "simple",
+    "term": "Deduplication and NULLs in Dataflow Gen2",
+    "definition": "No-code Power Query fixes: Remove rows > Remove duplicates, right-click column filters for NULLs, data-profiling column-quality pane to spot issues. Choose it for the low-code, visual, repeatable path (Q23/Q38/Q53 signals)."
+  },
+  {
+    "id": 318,
+    "topic_id": 3,
+    "difficulty": "simple",
+    "term": "Empty string vs NULL in Dataflow Gen2",
+    "definition": "Empty strings ('') and NULLs are different. A Dataflow Replace values step can turn '' into 0 while leaving NULLs untouched (Q54). Check profiling first so you do not accidentally erase meaningful missingness."
+  },
+  {
+    "id": 319,
+    "topic_id": 3,
+    "difficulty": "simple",
+    "term": "Star schema components",
+    "definition": "Central fact table with measures, foreign keys, and events (e.g. Sales with Amount) linked to dimension tables with attributes and primary keys (Customer, Product, Date, Employee). Dimensions filter the fact; foreign keys point to dimension primary keys."
+  },
+  {
+    "id": 320,
+    "topic_id": 3,
+    "difficulty": "simple",
+    "term": "Star vs snowflake schema",
+    "definition": "Snowflake normalizes dimensions into subdimensions (e.g. Product split into Product plus Product detail, Figure 3-35/3-43). Prefer star in Fabric/Power BI: fewer joins, faster VertiPaq performance, predictable filtering, easier for business users."
+  },
+  {
+    "id": 321,
+    "topic_id": 3,
+    "difficulty": "intermediate",
+    "term": "Implementing star in Lakehouse with PySpark",
+    "definition": "Open notebook > New notebook attached to the lakehouse (Figure 3-38), then write Python/PySpark to create dimension and fact tables with primary keys and foreign keys for Power BI to consume. Flexible for big and semi-structured data."
+  },
+  {
+    "id": 322,
+    "topic_id": 3,
+    "difficulty": "simple",
+    "term": "Implementing star in Lakehouse with Dataflow Gen2",
+    "definition": "Build dimensions and facts with visual Power Query steps instead of code. Best when the team prefers clicks over Spark and wants Applied-Steps debugging."
+  },
+  {
+    "id": 323,
+    "topic_id": 3,
+    "difficulty": "intermediate",
+    "term": "Implementing star in Warehouse with SQL",
+    "definition": "Create dimension and fact tables with T-SQL (optionally from SQL templates for schema/table/view/procedure, Figure 3-42). Advantages: enforced schemas, data types, constraints, and indexing for structured relational data."
+  },
+  {
+    "id": 324,
+    "topic_id": 3,
+    "difficulty": "simple",
+    "term": "General principles of dimensional modeling",
+    "definition": "Same in lakehouse and warehouse: fact tables measure business events, dimension tables describe the business behind those events, and the design stays simple for technical and business users. Good stars give faster performance, better usability, and a foundation for Power BI models."
+  },
+  {
+    "id": 325,
+    "topic_id": 3,
+    "difficulty": "intermediate",
+    "term": "Denormalization with Power Query Merge",
+    "definition": "Combining related tables into one wide table (e.g. merge Product detail back into Product, Figures 3-44/3-45) to simplify the model and speed queries at the cost of redundancy. In Power BI do it by merging queries in Power Query."
+  },
+  {
+    "id": 326,
+    "topic_id": 3,
+    "difficulty": "intermediate",
+    "term": "Data types and schema discipline",
+    "definition": "Pick correct types early (numbers, dates, text) and align them to the dimensional model (Change type step in Gen2). Warehouses enforce types, constraints, and indexing; mismatched types cause failed joins, bad sorts, and slow models."
+  },
+  {
+    "id": 327,
+    "topic_id": 3,
+    "difficulty": "intermediate",
+    "term": "Summarizing and filtering in notebooks vs Gen2",
+    "definition": "Same result three ways: Warehouse GROUP BY/WHERE, notebook groupBy/agg plus filter(), Gen2 Group by and Filter rows buttons. Exam picks Gen2 when it says visual, reusable, or no-code, and notebook when it says Spark scale."
+  },
+  {
+    "id": 401,
+    "topic_id": 4,
+    "difficulty": "simple",
+    "term": "Visual Query Editor (Ch04)",
+    "definition": "Low-code UI in a Fabric warehouse/lakehouse for building queries by dragging tables and clicking steps instead of writing T-SQL. Handles multi-table joins and merges; choosing it is signaled by 'low-code, repeatable, UI approach' for simple warehouse transforms."
+  },
+  {
+    "id": 402,
+    "topic_id": 4,
+    "difficulty": "simple",
+    "term": "Working with tables in Visual Query Editor",
+    "definition": "Click the plus sign on any table to see actions (Figure 4-5): add joins, merges, filters, and other manipulations nearly matching T-SQL scripts, composed visually box by box."
+  },
+  {
+    "id": 403,
+    "topic_id": 4,
+    "difficulty": "intermediate",
+    "term": "Fuzzy joins in Visual Query Editor",
+    "definition": "Joins using a matching algorithm for hand-typed values with typos (e.g. MSFT vs Microsoft). Enable 'Use fuzzy matching to perform the merge' at the bottom of the Join kind menu (Figure 4-8) instead of an exact join."
+  },
+  {
+    "id": 404,
+    "topic_id": 4,
+    "difficulty": "intermediate",
+    "term": "View SQL from Visual Query Editor",
+    "definition": "Click View SQL in the top menu (Figure 4-2) to see the T-SQL generated from a visual merge (Figure 4-9, join with expanded columns). There is no standard way to switch back from T-SQL into the visual editor."
+  },
+  {
+    "id": 405,
+    "topic_id": 4,
+    "difficulty": "intermediate",
+    "term": "Cross-lakehouse and cross-warehouse queries",
+    "definition": "Query across items by adding references with + Warehouses in the Explorer pane, then use the added warehouse like any local object. Built on Fabric cross-database query capability, still being extended."
+  },
+  {
+    "id": 406,
+    "topic_id": 4,
+    "difficulty": "simple",
+    "term": "Save as view vs save output to table",
+    "definition": "Two finishes for a visual query: Save as view (Figure 4-11 pop-up) reuses logic without copying data; Save output to table (Figure 4-12 pop-up) materializes results into a new table."
+  },
+  {
+    "id": 407,
+    "topic_id": 4,
+    "difficulty": "intermediate",
+    "term": "Visual Query Editor limitations",
+    "definition": "Only data query language (DQL) SELECT-style scripts; no INSERT/UPDATE/DELETE manipulation. Data definition (DDL) only through Save-as-table. Some functions exist only in the warehouse visual editor, not the lakehouse one."
+  },
+  {
+    "id": 408,
+    "topic_id": 4,
+    "difficulty": "simple",
+    "term": "Lineage and debugging in Visual Query Editor (4 views)",
+    "definition": "Click each query box to preview its result; click each step inside a box for that step's result; view the data source query (Figure 4-13); right-click a step to view its query plan showing SQL data flow (Figure 4-14). CI/CD aspects of this are out of scope detail."
+  },
+  {
+    "id": 409,
+    "topic_id": 4,
+    "difficulty": "simple",
+    "term": "Where to find the SQL language",
+    "definition": "Notebooks via %%sql cell magic or marking a cell as SQL (spark.sql('...')), the warehouse and lakehouse SQL endpoints, and the visual query editor. Spark SQL suits distributed Parquet/JSON/Delta sources and iterative high-throughput transforms over strict transactions."
+  },
+  {
+    "id": 410,
+    "topic_id": 4,
+    "difficulty": "intermediate",
+    "term": "T-SQL surface area (warehouse vs SQL database)",
+    "definition": "The warehouse exposes a limited special T-SQL surface versus full SQL Server. The native Fabric SQL database item gives almost the full serverless Azure SQL language. Exam trap: warehouse T-SQL is not the full language."
+  },
+  {
+    "id": 411,
+    "topic_id": 4,
+    "difficulty": "simple",
+    "term": "KQL queryset auto-created vs standalone",
+    "definition": "Creating an eventhouse auto-creates an attached KQL queryset (query notebook for that KQL database). You can also create a standalone KQL queryset item separately. Both hold reusable KQL scripts."
+  },
+  {
+    "id": 412,
+    "topic_id": 4,
+    "difficulty": "intermediate",
+    "term": "T-SQL in the Kusto database",
+    "definition": "A Kusto (KQL) database accepts T-SQL SELECT statements (e.g. select top 10 * from Weather) but nothing else: no CREATE/UPDATE/DDL/DML. Prefer KQL for real work."
+  },
+  {
+    "id": 413,
+    "topic_id": 4,
+    "difficulty": "simple",
+    "term": "KQL statement structure",
+    "definition": "Starts with a table name, then one operator per new line joined by pipes that funnel data (Table | where ... | summarize ...). Unlike T-SQL, the same operator may repeat (e.g. multiple where clauses) wherever needed."
+  },
+  {
+    "id": 414,
+    "topic_id": 4,
+    "difficulty": "simple",
+    "term": "Simplest KQL statement and row cap",
+    "definition": "Weather | take 10 returns 10 rows. Browsers cap rendered rows and go unresponsive beyond memory limits, so limit data (take/top/limit, where) as early as possible."
+  },
+  {
+    "id": 415,
+    "topic_id": 4,
+    "difficulty": "simple",
+    "term": "count operator (KQL)",
+    "definition": "Weather | count returns the row count of the piped result set (Figure 4-23 shows 59,066). The book's KQL examples use the Weather demo table unless stated."
+  },
+  {
+    "id": 416,
+    "topic_id": 4,
+    "difficulty": "simple",
+    "term": "take / top / limit (KQL row subset)",
+    "definition": "Return the first n rows of the piped data (e.g. Weather | take 5). Use early to preview huge streaming tables before heavier operators."
+  },
+  {
+    "id": 417,
+    "topic_id": 4,
+    "difficulty": "simple",
+    "term": "project / extend / distinct (KQL columns)",
+    "definition": "project keeps a column subset; extend adds computed columns while keeping originals (row-based calculations); distinct lists unique values. Column analogues of SELECT lists."
+  },
+  {
+    "id": 418,
+    "topic_id": 4,
+    "difficulty": "simple",
+    "term": "where operator (KQL filter)",
+    "definition": "Filters rows mid-pipe (e.g. Weather | where Temperature > 30). Repeatable at any position, unlike SQL's single WHERE clause."
+  },
+  {
+    "id": 419,
+    "topic_id": 4,
+    "difficulty": "simple",
+    "term": "sort by (KQL ordering)",
+    "definition": "Orders the piped result (e.g. ... | sort by Timestamp asc/desc). Place after filtering and before take for top-N patterns."
+  },
+  {
+    "id": 420,
+    "topic_id": 4,
+    "difficulty": "intermediate",
+    "term": "summarize aggregations (KQL GROUP BY)",
+    "definition": "Groups and aggregates (e.g. Weather | summarize count(), avg(Temperature) by City). KQL's equivalent of GROUP BY with aggregation functions."
+  },
+  {
+    "id": 421,
+    "topic_id": 4,
+    "difficulty": "advanced",
+    "term": "join vs lookup approaches (KQL)",
+    "definition": "Two KQL join syntaxes: join is the general approach (reference $left then $right in that order or error); lookup is for when the right table is much smaller (e.g. office device list enriching citywide sensor facts) and requires identical column names on both sides."
+  },
+  {
+    "id": 422,
+    "topic_id": 4,
+    "difficulty": "simple",
+    "term": "render visualizations (KQL)",
+    "definition": "Pipes query output into a chart (e.g. ... | render barchart/timechart). The book's 10-operator KQL list ends here; deeper Real-Time Intelligence detail is out of DP-600 scope."
+  },
+  {
+    "id": 501,
+    "topic_id": 5,
+    "difficulty": "simple",
+    "term": "Storage mode choice (Table 5-1)",
+    "definition": "Four Power BI options balancing performance, flexibility, and freshness: Import, DirectQuery, Direct Lake, Dual. Choice affects speed, modeling features, and how current the data is."
+  },
+  {
+    "id": 502,
+    "topic_id": 5,
+    "difficulty": "simple",
+    "term": "Import mode (semantic model)",
+    "definition": "First choice when allowed: loads data into Power BI memory (VertiPaq) for very fast responses. Weaknesses: only as fresh as the last refresh, and very large refreshes are slow or can fail under capacity."
+  },
+  {
+    "id": 503,
+    "topic_id": 5,
+    "difficulty": "simple",
+    "term": "DirectQuery mode (semantic model)",
+    "definition": "Keeps data in the source and queries live on each interaction: always up to date for large or fast-changing data, but slower, source-speed dependent, with limited modeling features (e.g. no calculated tables, some complex measures)."
+  },
+  {
+    "id": 504,
+    "topic_id": 5,
+    "difficulty": "intermediate",
+    "term": "Direct Lake mode (semantic model)",
+    "definition": "Queries Delta tables in a Fabric lakehouse/warehouse directly via the VertiPaq engine with no import and no separate query engine, loading only needed columns on demand. Fast for large models but needs a Fabric lakehouse/warehouse and well-optimized Delta; falls back to DirectQuery on memory pressure, unsupported features like SQL views, or RLS (see Chapter 6)."
+  },
+  {
+    "id": 505,
+    "topic_id": 5,
+    "difficulty": "intermediate",
+    "term": "Dual mode (semantic model)",
+    "definition": "Hybrid mixing Import and DirectQuery in one model or across multiple DirectQuery sources. Gives fast imported tables plus real-time tables and supports many-to-many without bridge tables, but imported parts still need refresh and mixed sources complicate troubleshooting and can slow reports."
+  },
+  {
+    "id": 506,
+    "topic_id": 5,
+    "difficulty": "intermediate",
+    "term": "DirectQuery to Import one-way switch",
+    "definition": "A DirectQuery model can be switched to Import later, but the change is permanent and cannot be switched back. Be certain before converting."
+  },
+  {
+    "id": 507,
+    "topic_id": 5,
+    "difficulty": "simple",
+    "term": "Star schema in semantic models (Fig5-1/5-2)",
+    "definition": "Same pattern as lakehouse/warehouse: central fact table with numeric measures, transactions, and foreign keys (e.g. Fct_Sales) linked to dimension tables with descriptive attributes for filtering (Dim_Product, Dim_Date, Dim_Customer, Dim_Employee). Requires relationships to filter/aggregate across tables."
+  },
+  {
+    "id": 508,
+    "topic_id": 5,
+    "difficulty": "simple",
+    "term": "Creating relationships in Power BI",
+    "definition": "Drag a column (dimension primary key, e.g. Employee_ID in Dim_Employee) onto the matching fact foreign key in Fct_Sales. The relationship window (Figure 5-4) then sets tables, columns, cardinality, and cross-filter direction; without a relationship a slicer only filters its own table (Figure 5-3 bug)."
+  },
+  {
+    "id": 509,
+    "topic_id": 5,
+    "difficulty": "simple",
+    "term": "Cardinality types (*:1, 1:1, *:* )",
+    "definition": "Many-to-one/one-to-many (*:1 or 1:*, order depends on selection order) is the normal star: many fact rows per one dimension key, e.g. many sales per employee. One-to-one (1:1) is rare and usually means merge the tables. Many-to-many (*:*) means no unique key on either side; fix with a bridge table. Wrong cardinality gives wrong results and slower queries."
+  },
+  {
+    "id": 510,
+    "topic_id": 5,
+    "difficulty": "intermediate",
+    "term": "Cross-filter Single vs Both",
+    "definition": "Single (recommended star default) flows dimension to fact only, e.g. product category filters sales: simple, predictable, fast. Both (bi-directional) lets filters flow either way and can support many-to-many without bridges, but risks ambiguity and slower queries."
+  },
+  {
+    "id": 511,
+    "topic_id": 5,
+    "difficulty": "intermediate",
+    "term": "Active vs inactive relationships and USERELATIONSHIP",
+    "definition": "Only one active relationship allowed between two tables. Extra relationships (e.g. Fct_Sales Order Date and Shipment Date both to Dim_Date) are created inactive (dashed) and activated per-measure with USERELATIONSHIP() in DAX (Figure 5-9)."
+  },
+  {
+    "id": 512,
+    "topic_id": 5,
+    "difficulty": "intermediate",
+    "term": "Disconnected tables as what-if inputs",
+    "definition": "Tables deliberately left unrelated to drive measure logic without filtering data, e.g. a target table with 0.8, 1, 1.2, 1.5 scenarios the user picks for what-if analysis. Distinct from a missing relationship bug."
+  },
+  {
+    "id": 513,
+    "topic_id": 5,
+    "difficulty": "intermediate",
+    "term": "Calculation groups purpose and SELECTEDMEASURE",
+    "definition": "Reusable DAX modifiers applied across many measures at once (e.g. YTD, previous-month logic) to cut repetitive measures. Created via the Model view calculation-group button; the default item Calculation item = SELECTEDMEASURE() returns the currently selected measure as the base/current item, with more items added by right-clicking Calculation items."
+  },
+  {
+    "id": 514,
+    "topic_id": 5,
+    "difficulty": "intermediate",
+    "term": "Explicit vs implicit measures for calc groups",
+    "definition": "Implicit measures are auto-created by dragging a field into a visual (Power BI sums/counts for you). Explicit measures are hand-written DAX. Calculation groups show a warning (Figure 5-13) and work only with explicit measures."
+  },
+  {
+    "id": 515,
+    "topic_id": 5,
+    "difficulty": "simple",
+    "term": "Field parameters for user-chosen fields",
+    "definition": "Let report users switch which fields or measures a visual shows (e.g. Quantity by Product Name vs by Order Date, or Region/Product/Customer dims). Create via Modeling > New parameter > Fields, name it, pick fields/measures; Power BI builds the selector list and supporting measure."
+  },
+  {
+    "id": 516,
+    "topic_id": 5,
+    "difficulty": "intermediate",
+    "term": "Dynamic format strings",
+    "definition": "DAX-driven formatting applied per measure or per calculation-group item (e.g. currency vs percentage by context, Figure 5-33 auto currency axis) without duplicating measures. Enable per measure in the data pane via Measure tools > format Dynamic, toggling Format view vs Measure view (Figures 5-29/5-30)."
+  },
+  {
+    "id": 517,
+    "topic_id": 5,
+    "difficulty": "advanced",
+    "term": "Dynamic format string limits",
+    "definition": "Work only with explicit measures and are not supported in DirectQuery mode for live connections. Otherwise they reduce maintenance by keeping one measure with context-aware formatting."
+  },
+  {
+    "id": 518,
+    "topic_id": 5,
+    "difficulty": "advanced",
+    "term": "Large semantic model storage format",
+    "definition": "For enterprise models outgrowing defaults: Pro Import datasets cap at 1 GB, while a premium workspace with large-model format exceeds 10 GB up to the Fabric capacity limit (Table 5-2). Even with stars, calc groups, and field parameters, switch formats when hitting Import limits."
+  },
+  {
+    "id": 519,
+    "topic_id": 5,
+    "difficulty": "intermediate",
+    "term": "Composite models and how to create one",
+    "definition": "Combine Import with DirectQuery tables or multiple DirectQuery sources in one model (plus other supported combos). Add the new table (e.g. live eventhouse table into an Import model), choose DirectQuery at the prompt; the table appears with a bolded differently-colored top bar (Figure 5-36 Tutorial table)."
+  },
+  {
+    "id": 520,
+    "topic_id": 5,
+    "difficulty": "intermediate",
+    "term": "Composite model benefits and limits",
+    "definition": "Benefits: fast in-memory Import tables alongside live DirectQuery data in one report. Limits: imported parts still need refresh, mixed sources can slow reports and complicate relationship troubleshooting and maintenance."
+  },
+  {
+    "id": 601,
+    "topic_id": 6,
+    "difficulty": "simple",
+    "term": "Performance focus in enterprise models (Ch06)",
+    "definition": "Optimize at two levels: DAX queries and measures, and report visuals. Faster queries plus lighter visuals give simpler maintenance, better documentation, and smarter performance tuning."
+  },
+  {
+    "id": 602,
+    "topic_id": 6,
+    "difficulty": "intermediate",
+    "term": "DAX INFO.VIEW functions",
+    "definition": "Metadata queries answering what measures, columns, and relationships exist in the semantic model, used for documentation and optimization. They require write access to the model and cannot run on a live connection to a published dataset; work in a local or editable model instead."
+  },
+  {
+    "id": 603,
+    "topic_id": 6,
+    "difficulty": "simple",
+    "term": "DAX Query View examples",
+    "definition": "Run and save DAX queries in the DAX query view to inspect results, review logic later, and share findings with the team before visualizing in reports."
+  },
+  {
+    "id": 604,
+    "topic_id": 6,
+    "difficulty": "simple",
+    "term": "Performance Analyzer workflow",
+    "definition": "View > Performance Analyzer > Start recording (Stop and Refresh visuals enable), then Refresh visuals for a full test or interact manually (slicers, filters, visual changes). Power BI logs each interaction in order with DAX, rendering, and other timings so you can spot slow visuals and verify fixes."
+  },
+  {
+    "id": 605,
+    "topic_id": 6,
+    "difficulty": "simple",
+    "term": "VAR and RETURN variables",
+    "definition": "Store an intermediate value or expression once with VAR and reuse it in RETURN. Avoids repetition, clarifies logic, speeds up complex measures, and eases debugging."
+  },
+  {
+    "id": 606,
+    "topic_id": 6,
+    "difficulty": "simple",
+    "term": "COUNTROWS vs COUNT",
+    "definition": "Use COUNTROWS to count table rows and COUNT to count non-blank values in a specific column. Prefer COUNTROWS for row counts; COUNT skips blanks."
+  },
+  {
+    "id": 607,
+    "topic_id": 6,
+    "difficulty": "intermediate",
+    "term": "Converting NULL to 0 guidance",
+    "definition": "Resist blanketing NULLs to 0 for looks (Figure 6-13 Germany bike sales). Extra zeros bloat the VertiPaq model and distort aggregations; leave truly missing values blank unless the business rule demands zero."
+  },
+  {
+    "id": 608,
+    "topic_id": 6,
+    "difficulty": "simple",
+    "term": "DIVIDE vs / operator",
+    "definition": "Prefer DIVIDE(numerator, denominator): better performance at millions of rows, handles blanks/divide-by-zero gracefully, and reads cleaner than the slash operator (Figure 6-17)."
+  },
+  {
+    "id": 609,
+    "topic_id": 6,
+    "difficulty": "intermediate",
+    "term": "IFERROR and ISERROR performance trap",
+    "definition": "Familiar from Excel but slow in large Power BI models and complex reports because they catch errors row by row. Handle the root cause instead (e.g. DIVIDE for division) for less performance impact."
+  },
+  {
+    "id": 610,
+    "topic_id": 6,
+    "difficulty": "advanced",
+    "term": "ORDERBY, PARTITIONBY, MATCHBY window helpers",
+    "definition": "Special DAX functions used with window functions INDEX, OFFSET, WINDOW, RANK, and ROWNUMBER (Table 6-1): ORDERBY sorts rows before calculation, PARTITIONBY groups rows into partitions, MATCHBY defines how rows match. Together they make windowed calculations efficient and accurate."
+  },
+  {
+    "id": 611,
+    "topic_id": 6,
+    "difficulty": "intermediate",
+    "term": "Direct Lake implementing (Ch06)",
+    "definition": "Work in a Fabric workspace against Delta tables from a lakehouse or warehouse. Linking a Power BI semantic model to the lakehouse auto-applies Direct Lake when data qualifies; manual enablement is only needed when switching from another storage mode. Ideal for frequent changes and massive datasets impractical to replicate, with better scalability and lower memory use."
+  },
+  {
+    "id": 612,
+    "topic_id": 6,
+    "difficulty": "advanced",
+    "term": "DirectQuery fallback triggers for Direct Lake",
+    "definition": "Power BI silently falls back to DirectQuery even on Delta data when: querying a SQL analytics endpoint view, hitting a table with row-level security, or exceeding Delta guardrails (too many Parquet files or row groups). Clues are higher latency and fewer modeling options."
+  },
+  {
+    "id": 613,
+    "topic_id": 6,
+    "difficulty": "intermediate",
+    "term": "Refreshing Direct Lake models (framing)",
+    "definition": "Unlike Import, which copies all data, Direct Lake framing refreshes only metadata references to the latest Delta version in OneLake. Completes in seconds with minimal load, so new data appears almost immediately."
+  },
+  {
+    "id": 614,
+    "topic_id": 6,
+    "difficulty": "intermediate",
+    "term": "Incremental refresh requirements",
+    "definition": "For large Import tables partitioned by date: the source query must filter by a date/time column, and the model defines RangeStart/RangeEnd parameters so the service refreshes only recent partitions instead of the whole table."
+  },
+  {
+    "id": 615,
+    "topic_id": 6,
+    "difficulty": "intermediate",
+    "term": "RangeStart and RangeEnd parameters",
+    "definition": "Locked-name parameters created in the Power Query Editor Manage Parameters dialog to bound the initial load (RangeStart earliest, RangeEnd latest). After publishing, the service overrides them with the refresh period from the incremental refresh policy."
+  },
+  {
+    "id": 616,
+    "topic_id": 6,
+    "difficulty": "advanced",
+    "term": "Incremental refresh policy dialog options",
+    "definition": "Archive data starting N before refresh date (history kept, older auto-removed, e.g. five years); incrementally refresh data starting N before refresh date (recent window, e.g. last seven days); optional real-time DirectQuery partition (Premium only); Only refresh complete days (avoid partial days); Detect data changes via a Last modified column to skip unchanged periods."
+  },
+  {
+    "id": 617,
+    "topic_id": 6,
+    "difficulty": "intermediate",
+    "term": "Publishing and first incremental refresh",
+    "definition": "Publish the parameterized model to the Power BI service, then run the first refresh manually and monitor it: it builds partitions, loads history, and rebuilds relationships, hierarchies, and calculations, so it is slow. Later refreshes touch only recent partitions and run much faster."
+  },
+  {
+    "id": 701,
+    "topic_id": 7,
+    "difficulty": "simple",
+    "term": "Workspace roles overview (Admin/Member/Contributor/Viewer)",
+    "definition": "Four workspace roles configured via Manage access at the top of the workspace. Best practice: assign Entra ID groups so IT owns membership maintenance. Anyone creating a workspace in the web UI becomes its first administrator (API creation can skip this, out of scope)."
+  },
+  {
+    "id": 702,
+    "topic_id": 7,
+    "difficulty": "simple",
+    "term": "Workspace role capability matrix (Table 7-1)",
+    "definition": "Administrator: maintain/delete workspace, add members, write data, create items, read. Member: add members, write, create, read. Contributor: write, create, read. Viewer: read only."
+  },
+  {
+    "id": 703,
+    "topic_id": 7,
+    "difficulty": "intermediate",
+    "term": "Member vs Contributor difference",
+    "definition": "The single difference is adding members/sharing: members can add people to roles and share workspace items onward; contributors cannot. Least-privilege sharing of a warehouse (Q11) or models/reports (Q21) therefore uses the member role."
+  },
+  {
+    "id": 704,
+    "topic_id": 7,
+    "difficulty": "simple",
+    "term": "Item-level access purpose",
+    "definition": "Finer-grained sharing beyond coarse workspace roles: grant specific users, security groups, or distribution lists access to one item (e.g. read one lakehouse) without workspace access. Permissions supplement or override workspace-role defaults; least-privilege tool for compliance."
+  },
+  {
+    "id": 705,
+    "topic_id": 7,
+    "difficulty": "intermediate",
+    "term": "Read item permission",
+    "definition": "Consumption-only: view a report or lakehouse. Cannot connect a semantic model in Power BI Desktop, build new reports from it, or query/write lakehouse tables and files."
+  },
+  {
+    "id": 706,
+    "topic_id": 7,
+    "difficulty": "intermediate",
+    "term": "Build item permission",
+    "definition": "Self-service analytics enabler: connect to a semantic model in Power BI Desktop, Excel, and reporting apps to build new reports and visuals; connect to a lakehouse SQL endpoint to query tables and feed personal pipelines. Requires Read; Read can exist without Build, never the reverse."
+  },
+  {
+    "id": 707,
+    "topic_id": 7,
+    "difficulty": "simple",
+    "term": "Write item permission",
+    "definition": "Creator/developer right to modify or delete an item: edit and republish a Power BI report, edit a Dataflow Gen2. Pair with Read/Build for full authoring."
+  },
+  {
+    "id": 708,
+    "topic_id": 7,
+    "difficulty": "advanced",
+    "term": "Lakehouse item sharing without workspace access (Q12 pattern)",
+    "definition": "Share the lakehouse via item permissions plus select 'Read all Apache Spark data' so the user reads underlying Spark data. Achieves read-all-lakehouse-data but nothing else in the workspace."
+  },
+  {
+    "id": 709,
+    "topic_id": 7,
+    "difficulty": "intermediate",
+    "term": "Controlling access to compute (two engines)",
+    "definition": "Data access and compute access differ. SQL analytics endpoint: direct SQL to OneLake tables with native SQL-configured permissions applying only to SQL queries (including TDS endpoint reads). Spark engine: access via Fabric API or notebooks to underlying lakehouse data."
+  },
+  {
+    "id": 710,
+    "topic_id": 7,
+    "difficulty": "simple",
+    "term": "Row vs column vs object vs file security ladder",
+    "definition": "Row-level filters which rows; column-level hides which columns; object-level gates whole tables/views/schemas (no permission means not even knowing existence); file-level gates OneLake files/folders. Pick the narrowest level satisfying the requirement."
+  },
+  {
+    "id": 711,
+    "topic_id": 7,
+    "difficulty": "intermediate",
+    "term": "Fixed RLS in Power BI",
+    "definition": "Created in the Manage roles popup with a fixed DAX filter expression (e.g. Category = 'Bikes'). Same rows hidden for everyone in that role; test with View as."
+  },
+  {
+    "id": 712,
+    "topic_id": 7,
+    "difficulty": "intermediate",
+    "term": "Dynamic RLS in Power BI",
+    "definition": "Filters by the current login, typically USERPRINCIPALNAME() matched to an identity column (optionally via LOOKUPVALUE). One role serves all users with personalized rows; the most-tested DAX function for semantic-model RLS rules (Q19)."
+  },
+  {
+    "id": 713,
+    "topic_id": 7,
+    "difficulty": "advanced",
+    "term": "Warehouse RLS via policy and predicate",
+    "definition": "Explicit T-SQL pattern: a SCHEMABOUND predicate function filtering on the logged-in user (e.g. User_Name()) plus a SECURITY POLICY binding it to the table. Relationships are not enforced inside security functions, so the developer hand-codes every join explicitly."
+  },
+  {
+    "id": 714,
+    "topic_id": 7,
+    "difficulty": "intermediate",
+    "term": "Warehouse column-level security (CLS)",
+    "definition": "GRANT / REVOKE / DENY on specific columns (e.g. hide Salary or CreditCardNumber while showing the table). GRANT gives, REVOKE removes a grant, DENY explicitly blocks. Q42 pattern: see table but not the Salary column."
+  },
+  {
+    "id": 715,
+    "topic_id": 7,
+    "difficulty": "simple",
+    "term": "Warehouse object-level security (OLS)",
+    "definition": "Broadest warehouse gate using the same GRANT/DENY on whole tables, views, or schemas (e.g. GRANT SELECT on dbo.FactSales). No grant means the object is invisible to the user."
+  },
+  {
+    "id": 716,
+    "topic_id": 7,
+    "difficulty": "intermediate",
+    "term": "Lakehouse file and folder permissions",
+    "definition": "Because a lakehouse is files in folders on OneLake, security is assigned in the Fabric UI per file/folder, separate from workspace roles and T-SQL GRANTs: Read (see and read contents), Read and write (create/modify/delete for engineers), Read write and execute (full control including managing permissions, for admins/owners)."
+  },
+  {
+    "id": 717,
+    "topic_id": 7,
+    "difficulty": "intermediate",
+    "term": "Sensitivity labels are org-defined via Purview",
+    "definition": "Not a fixed Microsoft list: the governance team defines labels (typical Public, General default, Confidential, and higher) shared with SharePoint, Teams, and Power BI through Microsoft Purview/Information Protection for consistent classification."
+  },
+  {
+    "id": 718,
+    "topic_id": 7,
+    "difficulty": "intermediate",
+    "term": "Applying labels and downstream inheritance",
+    "definition": "Developer picks a label from the item properties dropdown at creation. It cascades: a Confidential semantic model makes child reports inherit Confidential automatically, and policies (e.g. no PDF export/print of Confidential) are then enforced by the platform on all tagged items."
+  },
+  {
+    "id": 719,
+    "topic_id": 7,
+    "difficulty": "simple",
+    "term": "Promoted endorsement",
+    "definition": "Most common endorsement by the item owner or team: this tested report or semantic model is recommended as the starting point for general use."
+  },
+  {
+    "id": 720,
+    "topic_id": 7,
+    "difficulty": "intermediate",
+    "term": "Certified endorsement",
+    "definition": "Heavyweight trust mark granted only by an authorized team (governance team or Center of Excellence) after verifying accuracy, security, and performance. Reserved for official, business-critical datasets and reporting."
+  },
+  {
+    "id": 721,
+    "topic_id": 7,
+    "difficulty": "intermediate",
+    "term": "Master Data endorsement",
+    "definition": "Marks curated single-source-of-truth master content as the authoritative reference. Together with Promoted and Certified, endorsements drive discovery so users pick the right data without guessing."
+  },
+  {
+    "id": 801,
+    "topic_id": 8,
+    "difficulty": "simple",
+    "term": "Version control purpose in Fabric",
+    "definition": "Built-in history and documentation for collaboration, auditing, and quality: who changed what and when. Speeds troubleshooting and keeps teams aligned; essential even solo because memory alone fails over time."
+  },
+  {
+    "id": 802,
+    "topic_id": 8,
+    "difficulty": "intermediate",
+    "term": "Enabling GitHub integration",
+    "definition": "GitHub appears grayed out by default; a Fabric administrator must enable 'Users can sync workspace items with GitHub repositories' in the Admin portal Git integration section before workspaces can connect."
+  },
+  {
+    "id": 803,
+    "topic_id": 8,
+    "difficulty": "simple",
+    "term": "Connecting a workspace to GitHub (Q13 pattern)",
+    "definition": "Provide a personal access token (PAT) created in the GitHub portal plus the full HTTPS repository URL. GitHub maintains auth via manually-maintained PATs, unlike Azure DevOps SSO."
+  },
+  {
+    "id": 804,
+    "topic_id": 8,
+    "difficulty": "simple",
+    "term": "Connecting a workspace to Azure DevOps",
+    "definition": "Specify organization, project, Git repository, branch, and optionally a Git folder. Auth flows through Azure Entra ID single sign-on instead of PATs. Syncing and tracking then work exactly like GitHub."
+  },
+  {
+    "id": 805,
+    "topic_id": 8,
+    "difficulty": "simple",
+    "term": "Source control button and commit flow",
+    "definition": "After connection, a Source control button appears top-right of the workspace showing the count of uncommitted changes. Commit from the workspace to push item changes to Git with a confirmation and history entry (who changed what, when)."
+  },
+  {
+    "id": 806,
+    "topic_id": 8,
+    "difficulty": "intermediate",
+    "term": "Version control limitations in Fabric",
+    "definition": "GitHub supports cloud versions only, no on-premises setups. Not every Fabric item type is version-control compatible, so check support per item before relying on Git for a full workspace."
+  },
+  {
+    "id": 807,
+    "topic_id": 8,
+    "difficulty": "simple",
+    "term": ".pbix vs .pbit vs .pbip save options",
+    "definition": "Power BI Desktop saves three ways (Figure 8-15): .pbix single-file report with data, .pbit template capturing structure for reuse, .pbip project splitting report and semantic model into folders for outside editing and Git visibility."
+  },
+  {
+    "id": 808,
+    "topic_id": 8,
+    "difficulty": "intermediate",
+    "term": "Power BI project (.pbip) benefits",
+    "definition": "Report and model stored separately as text definitions editable outside Desktop in tools like VS Code, ideal for bulk measure edits without clicking each item. Folder structure makes Git commits show exactly what changed: model, report, or both, enabling real multi-person collaboration."
+  },
+  {
+    "id": 809,
+    "topic_id": 8,
+    "difficulty": "intermediate",
+    "term": "Power BI template (.pbit) contents",
+    "definition": "Single reusable starting-point file holding report pages and visuals, the semantic model definition (schema, relationships, measures), and Power Query definitions including parameters. Reuse the same layout, model, or queries repeatedly across reports."
+  },
+  {
+    "id": 810,
+    "topic_id": 8,
+    "difficulty": "intermediate",
+    "term": "TMDL edits use the template file (Q2 pattern)",
+    "definition": "After developing semantic-model changes in TMDL format, save the Power BI Desktop file as a Power BI Template (.pbit), the only listed format supporting the TMDL language workflow."
+  },
+  {
+    "id": 811,
+    "topic_id": 8,
+    "difficulty": "simple",
+    "term": "Power BI data source (.pbids) files",
+    "definition": "JSON text files reusing only a data source connection: no visuals, no data, no queries, just connection information. Share the connection without shipping the model."
+  },
+  {
+    "id": 812,
+    "topic_id": 8,
+    "difficulty": "simple",
+    "term": "Shared semantic models as one source of truth",
+    "definition": "One curated model serves many reports for consistency. Find models via Home > Get data > Power BI semantic models across accessible workspaces (Figure 8-27/8-28 shows a Master data endorsement); report authors connect instead of duplicating logic."
+  },
+  {
+    "id": 813,
+    "topic_id": 8,
+    "difficulty": "intermediate",
+    "term": "Deployment pipeline location and stages",
+    "definition": "Created outside any workspace via the main-menu Deployment pipelines button (inside one it would copy itself on deploy). Typical Dev > Test > Prod stages (Figure 8-31+), each assigned a workspace, promoting items forward in a controlled CI/CD flow (Q24/Q30 pattern)."
+  },
+  {
+    "id": 814,
+    "topic_id": 8,
+    "difficulty": "simple",
+    "term": "All-or-cherry-pick deployment",
+    "definition": "Promote everything at once or select specific items per stage (Figure 8-44 Test stage). Cherry-picking avoids pushing unfinished work to production."
+  },
+  {
+    "id": 815,
+    "topic_id": 8,
+    "difficulty": "simple",
+    "term": "Deployment history and access",
+    "definition": "Each pipeline tracks deployment history (what moved, when) and manage-access/settings controls per stage, supporting audits and rollback decisions."
+  },
+  {
+    "id": 816,
+    "topic_id": 8,
+    "difficulty": "intermediate",
+    "term": "Lineage view",
+    "definition": "Workspace top-right toggle from list to lineage view (Figure 8-48) showing every item and its dependencies, e.g. Blob storage feeding downstream items. Answers 'what connects to what' before changing anything."
+  },
+  {
+    "id": 817,
+    "topic_id": 8,
+    "difficulty": "intermediate",
+    "term": "Impact analysis",
+    "definition": "When lineage is overwhelming, click an item's impact-analysis icon (Figure 8-50) for a flat list of impacted children (Figure 8-51 shows 34 impacted items by category). Answers 'what else breaks if I change or publish this'."
+  },
+  {
+    "id": 818,
+    "topic_id": 8,
+    "difficulty": "advanced",
+    "term": "XMLA endpoint purpose and encryption",
+    "definition": "Communication protocol letting third-party tools and offline clients manage semantic models, governance, lifecycles, and data. All traffic is fully encrypted; it is the code-based CI/CD path as opposed to the UI deployment pipeline."
+  },
+  {
+    "id": 819,
+    "topic_id": 8,
+    "difficulty": "advanced",
+    "term": "Enabling XMLA read-write (Q1/Q46 pattern)",
+    "definition": "Default is read-only (query data, cannot alter). After creating Fabric capacity or starting trial, go to portal Settings and set the semantic-models XMLA endpoint to Read Write (capacity level; tenant 'Allow XMLA Endpoints' plus Excel options where applicable) to let third-party tools publish custom Direct Lake models or deploy changes."
+  },
+  {
+    "id": 820,
+    "topic_id": 8,
+    "difficulty": "intermediate",
+    "term": "Managing and processing models via XMLA",
+    "definition": "Connect tools like SQL Server Management Studio to the enabled endpoint to manage models directly. For Import models, right-click the model and choose Process Database (Figure 8-57) to trigger processing."
+  }
+]

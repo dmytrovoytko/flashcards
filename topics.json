@@ -1,0 +1,10 @@
+[
+  {"topic_id": 1, "topic": "Introduction to Microsoft Fabric and the Certification Content"},
+  {"topic_id": 2, "topic": "Getting Data / SQL, KQL"},
+  {"topic_id": 3, "topic": "Transforming Data / SQL"},
+  {"topic_id": 4, "topic": "Querying and Analyzing Data / SQL, KQL"},
+  {"topic_id": 5, "topic": "Designing and Building Semantic Models / DAX"},
+  {"topic_id": 6, "topic": "Optimizing Enterprise-Scale Semantic Models / DAX"},
+  {"topic_id": 7, "topic": "Implementing Security and Governance / SQL, DAX"},
+  {"topic_id": 8, "topic": "Maintaining the Analytics Development Lifecycle"}
+]

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <title>Stats — Flashcard Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+</head>
+<body class="container py-5">
+    <div class="mx-auto" style="max-width: 760px;">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h1>Progress</h1>
+            <a href="/" class="btn btn-primary btn-sm">Back to study</a>
+        </div>
+
+        <div class="card shadow p-3 mb-4">
+            <h5>Overall</h5>
+            <p class="mb-0 small text-muted">
+                {{ overall.answered }}/{{ overall.total }} answered ·
+                {{ overall.correct }} correct · {{ overall.incorrect }} incorrect ·
+                {{ overall.new }} new · {{ overall.accuracy }}% accuracy
+                ({{ overall.results_entries }} log entries)
+            </p>
+        </div>
+
+        <div class="card shadow p-3 mb-4">
+            <h5>By topic</h5>
+            <table class="table table-sm mb-0">
+                <thead><tr><th>Topic</th><th>Total</th><th>Done</th><th>Correct</th><th>Acc.</th></tr></thead>
+                <tbody>
+                {% for r in by_topic %}
+                    <tr>
+                        <td>{{ r.topic_id }} — {{ r.topic }}</td>
+                        <td>{{ r.total }}</td>
+                        <td>{{ r.answered }}</td>
+                        <td>{{ r.correct }}</td>
+                        <td>{{ r.accuracy }}%</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card shadow p-3">
+            <h5>By difficulty</h5>
+            <table class="table table-sm mb-0">
+                <thead><tr><th>Level</th><th>Total</th><th>Done</th><th>Correct</th><th>Acc.</th></tr></thead>
+                <tbody>
+                {% for r in by_difficulty %}
+                    <tr>
+                        <td>{{ r.difficulty }}</td>
+                        <td>{{ r.total }}</td>
+                        <td>{{ r.answered }}</td>
+                        <td>{{ r.correct }}</td>
+                        <td>{{ r.accuracy }}%</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
